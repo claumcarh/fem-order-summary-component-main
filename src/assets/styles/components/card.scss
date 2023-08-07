@@ -1,0 +1,114 @@
+
+.card {
+  padding: 7%;
+  text-align: center;
+
+  &__title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  &__text-content p.subtitle {
+    color: #8a8a8a;
+    margin-bottom: 25px;
+  }
+
+  &__plan-box {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__plan-box-left {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  &__plan-box-left div {
+    margin: 20px;
+  }
+
+  &__plan-box-left div h5 {
+  font-weight: 900;
+  font-size: 15px;
+  color: hsl(223, 47%, 23%)
+  }
+
+  &__plan-box-left div p {
+    font-size: 14px;
+    color: #8a8a8a;
+  }
+
+  &__plan-box a {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    transition: color .3s ease;
+  }
+
+  &__plan-box a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+  }
+
+  &__proceed-btn {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 20px 0;
+    border-radius: 12px;
+    margin: 30px 0;
+    transition: background-color .3s ease;
+  }
+
+  &__proceed-btn:hover {
+    background-color: hsl(224, 23%, 55%);
+  }
+
+  &__cancel-btn {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 900;
+    transition: color .3s ease;
+  }
+
+  &__cancel-btn:hover {
+    color: hsl(223, 47%, 23%)
+  }
+
+  @media only screen and (max-width: 425px) {
+    body {
+      background-image: url(../images/pattern-background-mobile.svg);
+      font-size: 14px;
+    }
+      &__container {
+        max-width: 87%;
+      }
+      &__title {
+        font-size: 23px;
+      }
+      &__plan-box {
+        padding: 12px;
+      }
+      &__plan-box-left div {
+        margin-left: 10px;
+      }
+
+      &__proceed-btn,
+      &__cancel-btn,
+      &__plan-box a {
+        font-size: 13px;
+      }
+      &__text-content {
+        padding: 9% 7%;
+      }
+  }
+
+
+}
