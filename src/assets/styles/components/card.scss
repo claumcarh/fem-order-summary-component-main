@@ -1,26 +1,43 @@
 
 .card {
-  padding: 7%;
+  max-width: 20.4375rem;
+  border-radius: 1.25rem;
   text-align: center;
+  background-color: #fff;
+
+  &__hero {
+    font-size: 0;
+  }
+
+  &__hero-img {
+    border-radius: 1.25rem 1.25rem 0 0;
+    width: 100%;
+  }
+
+  &__body {
+    padding: 2rem 1.5rem;
+  }
 
   &__title {
     color: hsl(223, 47%, 23%);
     font-weight: 900;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 1.375rem;
+    line-height: normal;
+    margin-bottom: 1rem;
   }
 
-  &__text-content p.subtitle {
-    color: #8a8a8a;
-    margin-bottom: 25px;
+  &__subtitle {
+    color: #717fa6;
+    line-height: 1.5625rem;
+    margin-bottom: 1.5rem;
   }
 
   &__plan-box {
-    background-color: hsl(225, 100%, 98%);
-    border-radius: 12px;
+    background-color: #f7f9ff;
+    border-radius: 0.6875rem;
     display: flex;
-    padding: 25px;
     align-items: center;
+    padding: 1rem;
     justify-content: space-between;
   }
 
@@ -83,10 +100,6 @@
   }
 
   @media only screen and (max-width: 425px) {
-    body {
-      background-image: url(../images/pattern-background-mobile.svg);
-      font-size: 14px;
-    }
       &__container {
         max-width: 87%;
       }
@@ -105,7 +118,7 @@
       &__plan-box a {
         font-size: 13px;
       }
-      &__text-content {
+      &__body {
         padding: 9% 7%;
       }
   }
