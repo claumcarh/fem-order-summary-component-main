@@ -30,6 +30,7 @@
     color: #717fa6;
     line-height: 1.5625rem;
     margin-bottom: 1.5rem;
+    padding: 0 0.5rem
   }
 
   &__plan-box {
@@ -45,16 +46,14 @@
     display: flex;
     align-items: center;
     text-align: left;
+    gap: 1.25rem;
   }
 
-  &__plan-box-left div {
-    margin: 20px;
-  }
-
-  &__plan-box-left div h5 {
+  &__plan-box-left h5 {
   font-weight: 900;
   font-size: 15px;
-  color: hsl(223, 47%, 23%)
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 0.3rem;
   }
 
   &__plan-box-left div p {
@@ -78,9 +77,11 @@
     text-decoration: none;
     color: white;
     background-color: hsl(245, 75%, 52%);
-    padding: 20px 0;
+    padding: 0.94rem;
     border-radius: 12px;
-    margin: 30px 0;
+    margin: 1.5rem 0;
+    font-weight: 900;
+    box-shadow: 0 20px 20px 0 rgba(56, 42, 255, 0.19);
     transition: background-color .3s ease;
   }
 
@@ -99,29 +100,34 @@
     color: hsl(223, 47%, 23%)
   }
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (min-width: 768px) {
+    max-width: 28.125rem;
       &__container {
         max-width: 87%;
       }
       &__title {
-        font-size: 23px;
+        font-size: 1.75rem;
+      }
+      &__subtitle {
+        font-size: 1rem;
+      }
+      &__plan-box-left h5 {
+        font-size: 1rem;
+      }
+      &__plan-box-left div p {
+        font-size: 1rem;
+      }
+      &__plan-box a {
+        font-size: 0.875rem;
       }
       &__plan-box {
-        padding: 12px;
+        padding: 1.56rem 1.5rem;
       }
-      &__plan-box-left div {
-        margin-left: 10px;
-      }
-
-      &__proceed-btn,
-      &__cancel-btn,
-      &__plan-box a {
-        font-size: 13px;
+      &__proceed-btn {
+        margin: 2rem 0;
       }
       &__body {
-        padding: 9% 7%;
+        padding: 2.81rem 3rem 3rem;
       }
   }
-
-
 }
