@@ -1,4 +1,3 @@
-
 .card {
   max-width: 20.4375rem;
   border-radius: 1.25rem;
@@ -30,7 +29,7 @@
     color: #717fa6;
     line-height: 1.5625rem;
     margin-bottom: 1.5rem;
-    padding: 0 0.5rem
+    padding: 0 0.5rem;
   }
 
   &__plan-box {
@@ -50,10 +49,10 @@
   }
 
   &__plan-box-left h5 {
-  font-weight: 900;
-  font-size: 15px;
-  color: hsl(223, 47%, 23%);
-  margin-bottom: 0.3rem;
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 0.3rem;
   }
 
   &__plan-box-left div p {
@@ -64,7 +63,7 @@
   &__plan-box a {
     font-weight: 900;
     color: hsl(223, 47%, 23%);
-    transition: color .3s ease;
+    transition: color 0.3s ease;
   }
 
   &__plan-box a:hover {
@@ -82,7 +81,7 @@
     margin: 1.5rem 0;
     font-weight: 900;
     box-shadow: 0 20px 20px 0 rgba(56, 42, 255, 0.19);
-    transition: background-color .3s ease;
+    transition: background-color 0.3s ease;
   }
 
   &__proceed-btn:hover {
@@ -93,41 +92,41 @@
     color: hsl(224, 23%, 55%);
     text-decoration: none;
     font-weight: 900;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
   }
 
   &__cancel-btn:hover {
-    color: hsl(223, 47%, 23%)
+    color: hsl(223, 47%, 23%);
   }
 
   @media only screen and (min-width: 768px) {
     max-width: 28.125rem;
-      &__container {
-        max-width: 87%;
-      }
-      &__title {
-        font-size: 1.75rem;
-      }
-      &__subtitle {
-        font-size: 1rem;
-      }
-      &__plan-box-left h5 {
-        font-size: 1rem;
-      }
-      &__plan-box-left div p {
-        font-size: 1rem;
-      }
-      &__plan-box a {
-        font-size: 0.875rem;
-      }
-      &__plan-box {
-        padding: 1.56rem 1.5rem;
-      }
-      &__proceed-btn {
-        margin: 2rem 0;
-      }
-      &__body {
-        padding: 2.81rem 3rem 3rem;
-      }
+    &__container {
+      max-width: 87%;
+    }
+    &__title {
+      font-size: 1.75rem;
+    }
+    &__subtitle {
+      font-size: 1rem;
+    }
+    &__plan-box-left h5 {
+      font-size: 1rem;
+    }
+    &__plan-box-left div p {
+      font-size: 1rem;
+    }
+    &__plan-box a {
+      font-size: 0.875rem;
+    }
+    &__plan-box {
+      padding: 1.56rem 1.5rem;
+    }
+    &__proceed-btn {
+      margin: 2rem 0;
+    }
+    &__body {
+      padding: 2.81rem 3rem 3rem;
+    }
   }
 }
